@@ -162,22 +162,13 @@ class Game{
     }
 
 
-    addObstacles()
-    {       
-            var x, y;
-            x = 0
-            var obstacle = createSprite(x, y);
-            obstacle.addImage("obstacle", obstacleImage);
-            obstacle.velocityX = 4.25;
-            obstacle.scale = 0.15;
-            obstacleGroup.add(obstacle);
-
-            
-            y = 0
-            var obstacle = createSprite(x, y);
-            obstacle.addImage("obstacle", obstacleImage);
-            obstacle.velocityY = 4;
-            obstacle.scale = 0.15;
-            obstacleGroup.add(obstacle);
-    }
-}
+addObstacles() { 
+    var x, y; 
+    x = random(0, width-100); 
+    y = 0 
+    var obstacle = createSprite(x, y); 
+    obstacle.addImage("obstacle", obstacleImage); 
+    obstacle.velocityY = 4; 
+    obstacle.scale = 0.15; 
+    obstacleGroup.add(obstacle); 
+}}
